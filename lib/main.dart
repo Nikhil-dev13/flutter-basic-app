@@ -14,13 +14,11 @@ class MyApp extends StatelessWidget {
   }
 }
 
-
 //Stateful Widget
 class RandomWords extends StatefulWidget {
   @override
   _RandomWordsState createState() => _RandomWordsState();
 }
-
 
 //The State
 class _RandomWordsState extends State<RandomWords> {
@@ -36,6 +34,7 @@ class _RandomWordsState extends State<RandomWords> {
     );
   }
 
+//The Logic
   Widget _buildSuggestions() {
     return ListView.builder(
         padding: EdgeInsets.all(16.0),
@@ -50,6 +49,7 @@ class _RandomWordsState extends State<RandomWords> {
         });
   }
 
+//The UI
   Widget _buildRow(WordPair pair) {
     return ListTile(
       title: Text(
